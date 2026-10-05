@@ -338,40 +338,6 @@ h2 {
 	font-size: 15.5px;
 }
 
-.work {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 36px;
-	margin-top: 48px;
-}
-
-.work div {
-	width: 150px;
-}
-
-.work .ico {
-	width: 150px;
-	height: 150px;
-	border-radius: 34px;
-	margin-bottom: 12px;
-}
-
-.work .ico svg {
-	width: 56px;
-	height: 56px;
-	stroke-width: 1.4;
-}
-
-.work h3 {
-	font-size: 16px;
-}
-
-.work p {
-	font-size: 14px;
-	color: var(--mute);
-	line-height: 1.45;
-}
-
 .tags {
 	display: flex;
 	flex-wrap: wrap;
@@ -492,3 +458,20 @@ h2 {
 		transition: none;
 	}
 }
+
+/* ===== Galeria de projetos ===== */
+.gal{display:grid;gap:40px;margin-top:48px}
+.row{display:grid;gap:32px 24px;align-items:start}
+@media(min-width:700px){
+  .row.r2{grid-template-columns:1.94fr 1.73fr}
+  .row.r3{grid-template-columns:1.81fr 1.33fr}
+  .row.r4{grid-template-columns:1.51fr 1.2fr}
+}
+.row .more{align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.gal figure{margin:0}
+.gal img{width:100%;height:auto;display:block;border-radius:16px;background:var(--soft)}
+.gal figcaption{margin-top:12px;font-size:16px;font-weight:700;letter-spacing:-.01em}
+.gal figcaption span{display:block;color:var(--mute);font-weight:400;font-size:14.5px}
+.gal .more{background:var(--soft);border-radius:16px;padding:28px}
+.gal .more h3{font-size:24px;letter-spacing:-.02em}
+.gal .more p{color:var(--mute);margin:8px 0 20px;font-size:15.5px}
