@@ -475,3 +475,12 @@ h2 {
 .gal .more{background:var(--soft);border-radius:16px;padding:28px}
 .gal .more h3{font-size:24px;letter-spacing:-.02em}
 .gal .more p{color:var(--mute);margin:8px 0 20px;font-size:15.5px}
+
+/* ===== WhatsApp flutuante ===== */
+.wa{position:fixed;right:22px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);transition:transform .18s}
+.wa:hover,.wa:focus-visible{transform:scale(1.1)}
+.wa svg{width:30px;height:30px;fill:currentColor}
+.wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;z-index:-1;animation:waPulse 2.4s ease-out infinite}
+@keyframes waPulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.6);opacity:0}}
+@media(max-width:700px){.wa{right:16px;bottom:calc(86px + env(safe-area-inset-bottom,0px));width:52px;height:52px}}
+@media(prefers-reduced-motion:reduce){.wa::before{animation:none;display:none}.wa{transition:none}}
