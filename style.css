@@ -100,5 +100,5 @@ h2{font-size:clamp(30px,4.6vw,48px);line-height:1.08;letter-spacing:-.035em;font
   .row.id2{grid-template-columns:1.78fr 1.72fr}
   .row.ot3{grid-template-columns:1.33fr 1.51fr}
 }
-.gal-sub{margin-top:88px;font-size:clamp(24px,3.4vw,32px);line-height:1.15;letter-spacing:-.03em;font-weight:800}
+.gal-sub{margin-top:clamp(96px,14vw,150px);font-size:clamp(24px,3.4vw,32px);line-height:1.15;letter-spacing:-.03em;font-weight:800}
 .gal-sub + p.in{margin-bottom:0}
